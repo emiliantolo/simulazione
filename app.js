@@ -9,7 +9,7 @@ app.use(bodyparser.json());
 app.get('/', (req, res) => res.send("Hello World"));
 
 app.get('/square', (req, res) => res.send(
-    res.status(200).send(string_square(req.query.string)+"")
+    res.status(200).json(string_square(req.query.string))
 ));
 
 

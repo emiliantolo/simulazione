@@ -7,7 +7,7 @@ let string_square=function(s){
 	p=l*l;
     }
     
-    return {result: p};
+    return {"result": p};
 }
 
 module.exports=string_square;
