@@ -2,13 +2,7 @@ const express=require ("express");
 const app=express();
 const PORT = process.env.PORT || 3000;
 
-let string_square=function(s){
-
-    let l=s.length;
-    
-    return l*l;
-}
-
+const string_square=require("./string_square");
 
 app.get('/', (req, res) => res.send("Hello World"));
 
